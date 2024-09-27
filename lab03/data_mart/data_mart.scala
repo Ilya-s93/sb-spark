@@ -39,7 +39,7 @@ object DataMart {
       .option("url", "jdbc:postgresql://10.0.0.31:5432/labdata")
       .option("driver", "org.postgresql.Driver")
       .option("user", "ilya_smirnov")
-      .option("password", "O4t1j7vi")
+      .option("password", "")
       .option("dbtable", "domain_cats")
       .load()
 
@@ -119,7 +119,7 @@ object DataMart {
       .option("url", "jdbc:postgresql://10.0.0.31:5432/ilya_smirnov")
       .option("dbtable", "clients")
       .option("user", "ilya_smirnov")
-      .option("password", "O4t1j7vi")
+      .option("password", "")
       .mode("overwrite")
       .option("driver", "org.postgresql.Driver")
       .save()
